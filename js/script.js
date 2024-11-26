@@ -12,3 +12,4 @@
 
 // console.log(`https://url.com/${category}`);
 console.log(0.5 * 2 === 1);
+// second commit
