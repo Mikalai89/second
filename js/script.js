@@ -1,15 +1,27 @@
 "use strict";
 
-// alert();
-// const result = confirm("Are you here?");
-// console.log(result);
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
 
-// const answer = prompt("Are you here?", "d");
-// console.log(answer);
-// console.log(typeof(answer));
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [], 
+    privat: false,
+};
 
-// const category = "toys";
+for (let i = 0; i <=1; i++) {
+    const lastFilm = prompt("Один из последних просмотренных фильмов?", "");
+    const reiting = prompt("На сколько оцените его?", "");
+    personalMovieDB.movies[lastFilm] = reiting;
+}
 
-// console.log(`https://url.com/${category}`);
-console.log(0.5 * 2 === 1);
-// четвертый commit
+
+// const lastFilm2 = prompt("Один из последних просмотренных фильмов?", "");
+// const reiting2 = prompt("На сколько оцените его?", "");
+// personalMovieDB.movies[lastFilm2] = reiting2;
+
+
+
+// console.log(personalMovieDB);
+console.log(typeof(numberOfFilms));
